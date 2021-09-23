@@ -10,7 +10,7 @@ import { ReactComponent as mahsulotlar } from '../assets/icons/mahsulotlar.svg';
 import { ReactComponent as kategoriya } from '../assets/icons/kategoriya.svg';
 import { ReactComponent as mijozlar } from '../assets/icons/mijozlar.svg';
 
-export const sidebar = [
+export const sidebarData = [
   {
     id: 1,
     path: 'buyurtmalar',
