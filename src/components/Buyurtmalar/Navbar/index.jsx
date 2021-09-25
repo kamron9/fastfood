@@ -1,10 +1,44 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Container, Plus, Tab, Text, Wrapper } from "./style";
 
 export const Navbar = () => {
-    return (
-        <div>
-            Navbar
-        </div>
-    )
-}
-export default Navbar
+  const [isActive, setIsActive] = useState("Yangi");
+  return (
+    <Container>
+      <Wrapper cornerSize>
+        <Plus />
+        <Text>Yangi buyurtma qo'shish</Text>
+      </Wrapper>
+      <Wrapper>
+        <Tab>
+          <Tab.Item
+            active={isActive === "Yangi"}
+            onClick={() => setIsActive("Yangi")}
+          >
+            Yangi
+          </Tab.Item>
+          <Tab.Item
+            active={isActive === "Qabul qilingan"}
+            onClick={() => setIsActive("Qabul qilingan")}
+          >
+            Qabul qilingan
+          </Tab.Item>
+          <Tab.Item
+            active={isActive === "Jonatilgan"}
+            onClick={() => setIsActive("Jonatilgan")}
+          >
+            Jo'natilgan
+          </Tab.Item>
+          <Tab.Item
+            active={isActive === "Yopilgan"}
+            onClick={() => setIsActive("Yopilgan")}
+          >
+            Yopilgan
+          </Tab.Item>
+        </Tab>
+      </Wrapper>
+      <Wrapper cornerSize></Wrapper>
+    </Container>
+  );
+};
+export default Navbar;
