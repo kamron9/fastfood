@@ -62,7 +62,7 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   border-radius: 0px 6px 6px 0px;
   .icon {
-    margin-right: 10px;
+    margin-right: 25px;
     width: 40px;
     height: 40px;
     padding: 10px;

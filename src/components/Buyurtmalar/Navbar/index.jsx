@@ -1,8 +1,18 @@
 import React, { useState } from "react";
-import { Container, Plus, Tab, Text, Wrapper } from "./style";
+import {
+  Container,
+  IconWrapper,
+  MenuH,
+  Plus,
+  Tab,
+  Text,
+  Toggle,
+  Wrapper,
+} from "./style";
 
 export const Navbar = () => {
   const [isActive, setIsActive] = useState("Yangi");
+  const [isTabActive, setIsTabActive] = useState(true);
   return (
     <Container>
       <Wrapper cornerSize>
@@ -37,7 +47,13 @@ export const Navbar = () => {
           </Tab.Item>
         </Tab>
       </Wrapper>
-      <Wrapper cornerSize></Wrapper>
+      <Wrapper cornerSize>
+        <Toggle>
+          <IconWrapper>
+            <MenuH></MenuH>
+          </IconWrapper>
+        </Toggle>
+      </Wrapper>
     </Container>
   );
 };
