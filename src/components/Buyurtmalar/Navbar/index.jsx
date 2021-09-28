@@ -3,6 +3,7 @@ import {
   Container,
   IconWrapper,
   MenuH,
+  MenuV,
   Plus,
   Tab,
   Text,
@@ -49,8 +50,17 @@ export const Navbar = () => {
       </Wrapper>
       <Wrapper cornerSize>
         <Toggle>
-          <IconWrapper>
-            <MenuH></MenuH>
+          <IconWrapper
+            active={isTabActive}
+            onClick={() => setIsTabActive(true)}
+          >
+            <MenuV />
+          </IconWrapper>
+          <IconWrapper
+            active={!isTabActive}
+            onClick={() => setIsTabActive(false)}
+          >
+            <MenuH />
           </IconWrapper>
         </Toggle>
       </Wrapper>

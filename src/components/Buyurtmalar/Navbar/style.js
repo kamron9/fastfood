@@ -10,6 +10,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 80px;
   background: #000;
   width: ${({ cornerSize }) => (cornerSize ? `300px` : `100%`)};
@@ -52,7 +53,6 @@ Tab.Item = styled.div`
   font-size: 14px;
   line-height: 16px;
   width: 170px;
-  color: #9c9fa2;
   cursor: pointer;
   transition: all 0.3s;
   color: ${({ active }) => (active ? `black` : " #9c9fa2")};
@@ -66,15 +66,31 @@ Tab.Item = styled.div`
 export const Toggle = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100px;
   height: 50px;
   background: #edeff3;
   border-radius: 24px;
 `;
-export const IconWrapper = styled.div``;
+export const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${({ active }) => (active ? "white" : "transparent")};
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+`;
 
 export const MenuH = styled(menuH)`
+  width: 14px;
+  height: 14px;
+`;
+export const MenuV = styled(menuV)`
   width: 14px;
   height: 14px;
 `;
