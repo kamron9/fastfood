@@ -1,21 +1,30 @@
 import React from "react";
 import ProductCard from "../../ProductCard";
 import { Container, Wrapper } from "./style";
+import { card } from "../../../mock/card";
 
 export const Body = () => {
   return (
     <Container>
       <Wrapper>
-        <ProductCard />
+        {card.yangi.map((value) => (
+          <ProductCard value={value} key={value.id} />
+        ))}
       </Wrapper>
       <Wrapper>
-        <ProductCard />
+        {card.qabul.map((value) => (
+          <ProductCard value={value} key={value.id} />
+        ))}
       </Wrapper>
       <Wrapper>
-        <ProductCard />
+        {card.jonatilgan.map((value) => (
+          <ProductCard value={value} key={value.id} />
+        ))}
       </Wrapper>
       <Wrapper>
-        <ProductCard />
+        {card.yopilgan.map((value) => (
+          <ProductCard value={value} key={value.id} />
+        ))}
       </Wrapper>
     </Container>
   );

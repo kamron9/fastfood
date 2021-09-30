@@ -1,11 +1,11 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Done } from "./style";
 
-export const Done = () => {
+export const Index = () => {
   return (
     <Container>
       <Done />
     </Container>
   );
 };
-export default Done;
+export default Index;

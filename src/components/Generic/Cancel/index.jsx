@@ -1,11 +1,11 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, Cancel } from "./style";
 
-export const Cancel = () => {
+export const Index = () => {
   return (
     <Container>
       <Cancel />
     </Container>
   );
 };
-export default Cancel;
+export default Index;
