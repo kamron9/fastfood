@@ -92,8 +92,10 @@ export const IconWrapper = styled.div`
 export const MenuH = styled(menuH)`
   width: 14px;
   height: 14px;
+  fill: ${({ active }) => (active ? "#8D9BA8;" : "transparent")};
 `;
 export const MenuV = styled(menuV)`
   width: 14px;
   height: 14px;
+  fill: ${({ active }) => (active ? "#8D9BA8;" : "transparent")};
 `;

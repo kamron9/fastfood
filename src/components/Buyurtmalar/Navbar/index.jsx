@@ -54,13 +54,13 @@ export const Navbar = () => {
             active={isTabActive}
             onClick={() => setIsTabActive(true)}
           >
-            <MenuV />
+            <MenuV active={isTabActive} />
           </IconWrapper>
           <IconWrapper
             active={!isTabActive}
             onClick={() => setIsTabActive(false)}
           >
-            <MenuH />
+            <MenuH active={!isTabActive} />
           </IconWrapper>
         </Toggle>
       </Wrapper>
