@@ -23,7 +23,7 @@ export const Navbar = () => {
       <Wrapper>
         <Tab>
           <Tab.Item
-            active={ isActive === "Yangi"}
+            active={isActive === "Yangi"}
             onClick={() => setIsActive("Yangi")}
           >
             Yangi
