@@ -6,7 +6,6 @@ import { card } from "../../../mock/card";
 export const Body = () => {
   return (
     <Container>
-      <h1>menuH</h1>
       <Wrapper>
         {card.yangi.map((value) => (
           <ProductCard value={value} key={value.id} />

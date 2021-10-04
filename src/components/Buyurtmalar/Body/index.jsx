@@ -1,14 +1,9 @@
 import React from "react";
-import { Container } from "./style";
 import MenuH from "../menuH";
 import MenuV from "../menuV";
 
-export const Body = () => {
-  return (
-    <Container>
-      <MenuH />
-      <MenuV />
-    </Container>
-  );
+export const Body = (props) => {
+  console.log(props, "props");
+  return props.active ? <MenuH /> : <MenuV />;
 };
 export default Body;

@@ -46,7 +46,7 @@ Info.OrderID = styled.div`
   min-width: 80px;
   height: 36px;
   font-family: SFProDisplay;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.466667px;
   color: #ffffff;

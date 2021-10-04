@@ -47,6 +47,7 @@ export const Tab = styled.div`
   height: 50px;
   background: #edeff3;
   border-radius: 24px;
+  opacity: ${({ active }) => !active && 0.4};
 `;
 Tab.Item = styled.div`
   display: flex;

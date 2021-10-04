@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const Done = styled(done)`
   width: 44px;
   height: 44px;
-  padding: 12px;
+  padding: 10px;
   background: #ffffff;
   box-shadow: 0px 2px 2px rgba(174, 176, 181, 0.314986);
   border-radius: 50%;

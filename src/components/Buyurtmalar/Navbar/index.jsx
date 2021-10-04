@@ -11,7 +11,7 @@ import {
   Wrapper,
 } from "./style";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   const [isActive, setIsActive] = useState("Yangi");
   const [isTabActive, setIsTabActive] = useState(true);
   return (
@@ -21,28 +21,28 @@ export const Navbar = () => {
         <Text>Yangi buyurtma qo'shish</Text>
       </Wrapper>
       <Wrapper>
-        <Tab>
+        <Tab active={isTabActive}>
           <Tab.Item
             active={isActive === "Yangi"}
-            onClick={() => setIsActive("Yangi")}
+            onClick={() => isTabActive && setIsActive("Yangi")}
           >
             Yangi
           </Tab.Item>
           <Tab.Item
             active={isActive === "Qabul qilingan"}
-            onClick={() => setIsActive("Qabul qilingan")}
+            onClick={() => isTabActive && setIsActive("Qabul qilingan")}
           >
             Qabul qilingan
           </Tab.Item>
           <Tab.Item
             active={isActive === "Jonatilgan"}
-            onClick={() => setIsActive("Jonatilgan")}
+            onClick={() => isTabActive && setIsActive("Jonatilgan")}
           >
             Jo'natilgan
           </Tab.Item>
           <Tab.Item
             active={isActive === "Yopilgan"}
-            onClick={() => setIsActive("Yopilgan")}
+            onClick={() => isTabActive && setIsActive("Yopilgan")}
           >
             Yopilgan
           </Tab.Item>
@@ -52,13 +52,19 @@ export const Navbar = () => {
         <Toggle>
           <IconWrapper
             active={isTabActive}
-            onClick={() => setIsTabActive(true)}
+            onClick={() => {
+              setIsTabActive(true);
+              props.onClick(true);
+            }}
           >
             <MenuV active={isTabActive} />
           </IconWrapper>
           <IconWrapper
             active={!isTabActive}
-            onClick={() => setIsTabActive(false)}
+            onClick={() => {
+              setIsTabActive(false);
+              props.onClick(false);
+            }}
           >
             <MenuH active={!isTabActive} />
           </IconWrapper>
