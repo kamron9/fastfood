@@ -3,6 +3,7 @@ export const card = {
     {
       id: 1,
       orderId: 1234,
+      category: "yangi",
       time: new Date(),
       summa: "40000",
       user: {
@@ -20,6 +21,7 @@ export const card = {
     {
       id: 12,
       orderId: 45678,
+      category: "yangi",
       time: new Date(),
       summa: "40000",
       user: {
@@ -40,6 +42,7 @@ export const card = {
       id: 21,
       orderId: 38424,
       time: new Date(),
+      category: "qabul",
       summa: "40000",
       user: {
         name: "Kamron Alimov",
@@ -59,6 +62,7 @@ export const card = {
       id: 31,
       orderId: 38424,
       time: new Date(),
+      category: "jonatilgan",
       summa: "40000",
       user: {
         name: "Kamron Alimov",
@@ -76,6 +80,7 @@ export const card = {
       id: 32,
       orderId: 38424,
       time: new Date(),
+      category: "jonatilgan",
       summa: "40000",
       user: {
         name: "Kamron Alimov",
@@ -95,6 +100,7 @@ export const card = {
       id: 41,
       orderId: 38424,
       time: new Date(),
+      category: "yopilgan",
       summa: "40000",
       user: {
         name: "Kamron Alimov",
@@ -112,6 +118,7 @@ export const card = {
       id: 42,
       orderId: 38424,
       time: new Date(),
+      category: "yopilgan",
       summa: "40000",
       user: {
         name: "Kamron Alimov",

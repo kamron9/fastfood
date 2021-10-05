@@ -9,8 +9,16 @@ import {
   Info,
   Wrapper,
 } from "./style";
+import { BuyurtmaContext } from "../../context/buyurtma";
 
 export const ProductCard = ({ value }) => {
+  const [card, setBuyurtmaData] = BuyurtmaContext();
+
+  const onCancel = (value) => {
+    let filtered = card[value.category].filter((data) => data.id !== value.id);
+    let newData = { ...card, [value.category]: filtered };
+    setBuyurtmaData(newData);
+  };
   return (
     <Container>
       <Wrapper>
@@ -48,7 +56,9 @@ export const ProductCard = ({ value }) => {
             <Info.Operator>Operator:</Info.Operator>
             <Info.OperatorName>{value.operator.name}</Info.OperatorName>
           </div>
-          <Cancel />
+          <div onClick={() => onCancel(value)}>
+            <Cancel />
+          </div>
         </Footer>
         <Footer>
           <div>
