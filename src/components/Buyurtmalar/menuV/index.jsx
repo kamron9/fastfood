@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "../../ProductCard";
+import ProductCard from "../../ProductCardV";
 import { Container, Wrapper } from "./style";
 import { BuyurtmaContext } from "../../../context/buyurtma";
 

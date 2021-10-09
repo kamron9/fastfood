@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "../../ProductCard";
+import ProductCard from "../../ProductCardH";
 import { Container, Wrapper } from "./style";
 import { BuyurtmaContext } from "../../../context/buyurtma";
 
@@ -13,7 +13,8 @@ export const Body = () => {
           <ProductCard value={value} key={value.id} />
         ))}
       </Wrapper>
-      <Wrapper>
+      {/* <Wrapper></Wrapper> */}
+      {/* <Wrapper>
         {card.qabul.map((value) => (
           <ProductCard value={value} key={value.id} />
         ))}
@@ -27,7 +28,7 @@ export const Body = () => {
         {card.yopilgan.map((value) => (
           <ProductCard value={value} key={value.id} />
         ))}
-      </Wrapper>
+      </Wrapper> */}
     </Container>
   );
 };
