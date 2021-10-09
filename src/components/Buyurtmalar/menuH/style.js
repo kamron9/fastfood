@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  margin: 33px 50px;
   flex-direction: column;
-  box-sizing: border-box;
+  margin: 35px;
+  width: 1500px;
 `;
 export const Wrapper = styled.div`
   display: flex;

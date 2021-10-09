@@ -2,17 +2,36 @@ import styled from "styled-components";
 import { ReactComponent as save } from "../../assets/icons/save.svg";
 import { ReactComponent as clock } from "../../assets/icons/clock.svg";
 import { ReactComponent as user } from "../../assets/icons/user.svg";
+import { ReactComponent as call } from "../../assets/icons/call.svg";
+import { ReactComponent as clipboard } from "../../assets/icons/clipboard.svg";
 
 export const Container = styled.div`
-  height: 100px;
-  border-radius: 20px;
+  display: flex;
+  border-radius: 6px;
   background: #ffffff;
+  margin-bottom: 12px;
+  height: 170px;
 `;
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  display: flex;
+  /* justify-content: center; */
+  align-items: ${({ center }) => center && "center"};
+  flex-direction: column;
+  flex: ${({ flex }) => (flex ? 2 : 1)};
+  padding: 15px 25px;
+  border-right: ${({ last }) => !last && "1px solid #d9d7d7"};
+`;
 export const Info = styled.div`
   display: flex;
-  margin-left: ${({ end }) => end && "auto"};
-  align-items: ${({ center }) => center && "center"};
+  align-items: center;
+  padding: 20px;
+  /* border-bottom: ${({ bottom }) => bottom && "1px solid #e5e5e5"}; */
+`;
+export const BottomLine = styled.div`
+  width: 84px;
+  height: 1px;
+  opacity: 0.2;
+  border: 1px solid #979797;
 `;
 Info.OrderID = styled.div`
   display: flex;
@@ -48,7 +67,6 @@ Info.Save = styled(save)`
 export const ClockWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-left: auto;
 `;
 Info.Clock = styled(clock)`
   width: 24px;
@@ -69,20 +87,22 @@ Info.User = styled(user)`
 `;
 Info.Name = styled.div`
   font-family: SFProDisplay;
-  font-size: 20px;
-  line-height: 20px;
-  letter-spacing: 0.533333px;
+  font-size: 22px;
+  line-height: 22px;
   color: #2d3a45;
 `;
 Info.Number = styled.div`
   font-family: SFProDisplay;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 18px;
-  letter-spacing: 0.4px;
   color: #2d3a45;
-  mix-blend-mode: normal;
   opacity: 0.7;
-  margin: 5px 0 20px 0;
+`;
+Info.CallIcon = styled(call)`
+  width: 20px;
+  height: 20px;
+  margin-right: 22px;
+  opacity: 0.7;
 `;
 Info.TotalPrice = styled.div`
   font-family: SFProDisplay;

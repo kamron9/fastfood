@@ -2,6 +2,7 @@ import React from "react";
 import Cancel from "../Generic/Cancel";
 import Done from "../Generic/Done";
 import {
+  BottomLine,
   ClockWrapper,
   Container,
   Footer,
@@ -11,7 +12,7 @@ import {
 } from "./style";
 import { BuyurtmaContext } from "../../context/buyurtma";
 
-export const ProductCard = ({ value }) => {
+export const ProductCardH = ({ value }) => {
   const [card, setBuyurtmaData] = BuyurtmaContext();
 
   const onCancel = (value) => {
@@ -21,62 +22,34 @@ export const ProductCard = ({ value }) => {
   };
   return (
     <Container>
-      <Wrapper>
-
+      <Wrapper center>
+        <Info bottom>
+          <Info.OrderID>12345</Info.OrderID>
+          <IconWrapper>
+            <Info.Save />
+          </IconWrapper>
+        </Info>
+        <BottomLine />
+        <Info>
+          <ClockWrapper>
+            <Info.Clock />
+            <Info.Time>15:00</Info.Time>
+          </ClockWrapper>
+        </Info>
       </Wrapper>
+      <Wrapper flex>
+        <Info>
+          <Info.User />
+          <Info.Name>Muhammad Jumayev</Info.Name>
+        </Info>
+        <Info>
+          <Info.CallIcon />
+          <Info.Number>123456789</Info.Number>
+        </Info>
+      </Wrapper>
+      <Wrapper flex></Wrapper>
+      <Wrapper last>4</Wrapper>
     </Container>
   );
 };
-export default ProductCard;
-
-
-
-
-
-        {/* <Info.OrderID>{value.orderId}</Info.OrderID>
-        <IconWrapper>
-          <Info.Save />
-        </IconWrapper>
-        <ClockWrapper>
-          <Info.Clock />
-          <Info.Time>{`${value.time.getHours()}:${value.time.getMinutes()}`}</Info.Time>
-        </ClockWrapper>
-      </Wrapper>
-      <Wrapper flex top>
-        <Info>
-          <Info.User />
-          <div>
-            <Info.Name>{value.user.name}</Info.Name>
-            <Info.Number>{value.user.number}</Info.Number>
-          </div>
-        </Info>
-        <Info center>
-          <div>
-            <Info.TotalPrice top>Umumiy Summa</Info.TotalPrice>
-            <Info.Price>{value.summa} UZS</Info.Price>
-          </div>
-          <Info end={"true"} center>
-            <Info.PaymeIcon />
-            <Info.Payme>Payme</Info.Payme>
-          </Info>
-        </Info>
-      </Wrapper>
-      <Wrapper flex last>
-        <Footer>
-          <div>
-            <Info.Operator>Operator:</Info.Operator>
-            <Info.OperatorName>{value.operator.name}</Info.OperatorName>
-          </div>
-          <div onClick={() => onCancel(value)}>
-            <Cancel />
-          </div>
-        </Footer>
-        <Footer>
-          <div>
-            <Info.Operator>Filial:</Info.Operator>
-            <Info.OperatorName>
-              {value.filial.title} <br /> {value.filial.location}
-            </Info.OperatorName>
-          </div>
-          <Done />
-        </Footer> */}
+export default ProductCardH;
