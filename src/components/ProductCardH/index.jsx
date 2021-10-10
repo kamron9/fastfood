@@ -25,7 +25,7 @@ export const ProductCardH = ({ value }) => {
     <Container>
       <Wrapper center>
         <Info bottom>
-          <Info.OrderID>12345</Info.OrderID>
+          <Info.OrderID>{value.orderId}</Info.OrderID>
           <IconWrapper>
             <Info.Save />
           </IconWrapper>
@@ -34,23 +34,23 @@ export const ProductCardH = ({ value }) => {
         <Info>
           <ClockWrapper>
             <Info.Clock />
-            <Info.Time>15:00</Info.Time>
+            <Info.Time>{`${value.time.getHours()}:${value.time.getMinutes()}`}</Info.Time>
           </ClockWrapper>
         </Info>
       </Wrapper>
       <Wrapper flex>
         <Info>
           <Info.User />
-          <Info.Name>Muhammad Jumayev</Info.Name>
+          <Info.Name>{value.user.name}</Info.Name>
         </Info>
         <Info>
           <Info.CallIcon />
-          <Info.Number>123456789</Info.Number>
+          <Info.Number>{value.user.number}</Info.Number>
         </Info>
       </Wrapper>
       <Wrapper flex>
         <MainWrapper top>
-          <Info.ClipBoard /> <Info.ClipPrice>34,500 UZS</Info.ClipPrice>{" "}
+          <Info.ClipBoard /> <Info.ClipPrice>35,000UZS</Info.ClipPrice>{" "}
           <Info.PaymeIcon /> <Info.Payme>Payme</Info.Payme>
         </MainWrapper>
         <MainWrapper>
@@ -58,17 +58,32 @@ export const ProductCardH = ({ value }) => {
         </MainWrapper>
         <Info.TotalPrice top>Umumiy summa</Info.TotalPrice>
         <Footer>
-          <Info.Price>40,400</Info.Price>
+          <Info.Price>{value.summa}</Info.Price>
           <Info.Name>&nbsp;UZS</Info.Name>
         </Footer>
       </Wrapper>
       <Wrapper flex last>
-        <Info.Operator>Operator:</Info.Operator>
-        <Info.OperatorName>Kamilova M</Info.OperatorName>
-        <Footer column top>
-          <Info.Operator>Filallar:</Info.Operator>
-          <Info.OperatorName>Kamilova M</Info.OperatorName>
-        </Footer>
+        <MainWrapper between>
+          <div>
+            <Info.Operator>Operator:</Info.Operator>
+            <Info.OperatorName>{value.operator.name}</Info.OperatorName>
+          </div>
+          <div onClick={() => onCancel(value)}>
+            <Cancel />
+          </div>
+        </MainWrapper>
+        <MainWrapper between top>
+          <div>
+            <Info.Operator>Filallar:</Info.Operator>
+            <Info.OperatorName>
+              {value.filial.title} <br />
+              {value.filial.location}
+            </Info.OperatorName>
+          </div>
+          <div>
+            <Done />
+          </div>
+        </MainWrapper>
       </Wrapper>
     </Container>
   );

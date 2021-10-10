@@ -57,7 +57,7 @@ export const Navbar = (props) => {
               props.onClick(true);
             }}
           >
-            <MenuV active={isTabActive} />
+            <MenuH active={isTabActive} />
           </IconWrapper>
           <IconWrapper
             active={!isTabActive}
@@ -66,7 +66,7 @@ export const Navbar = (props) => {
               props.onClick(false);
             }}
           >
-            <MenuH active={!isTabActive} />
+            <MenuV active={!isTabActive} />
           </IconWrapper>
         </Toggle>
       </Wrapper>

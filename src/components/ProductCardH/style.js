@@ -12,6 +12,10 @@ export const Container = styled.div`
   background: #ffffff;
   margin-bottom: 12px;
   height: fit-content;
+  transition: all 0.3s;
+  :hover {
+    box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -158,16 +162,15 @@ Info.OperatorName = styled.div`
   line-height: 20px;
   color: #2d3a45;
 `;
-
 export const Footer = styled.div`
   display: flex;
   margin-top: ${({ top }) => top && `30px`};
-
-  /* align-items: center; */
+  align-items: center;
   flex-direction: ${({ column }) => column && "column"};
 `;
 export const MainWrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: ${({ between }) => between && "space-between"};
   margin-top: ${({ top }) => (top ? `25px` : "20px")};
 `;

@@ -8,7 +8,7 @@ export const card = {
       summa: "40000",
       user: {
         name: "Kamron Alimov",
-        number: 12345678,
+        number: "(+998 99) 123-45-67",
       },
       operator: {
         name: "Kamilova A",
@@ -26,7 +26,25 @@ export const card = {
       summa: "40000",
       user: {
         name: "Kamron Alimov",
-        number: 12345678,
+        number: "(+998 99) 123-45-67",
+      },
+      operator: {
+        name: "Kamilova A",
+      },
+      filial: {
+        title: "Fast Food",
+        location: "Maksim Gorkiy",
+      },
+    },
+    {
+      id: 13,
+      orderId: 55678,
+      category: "yangi",
+      time: new Date(),
+      summa: "40000",
+      user: {
+        name: "Kamron Alimov",
+        number: "(+998 99) 123-45-67",
       },
       operator: {
         name: "Kamilova A",
@@ -46,7 +64,7 @@ export const card = {
       summa: "40000",
       user: {
         name: "Kamron Alimov",
-        number: 12345678,
+        number: "(+998 99) 123-45-67",
       },
       operator: {
         name: "Kamilova B",
@@ -66,7 +84,7 @@ export const card = {
       summa: "40000",
       user: {
         name: "Kamron Alimov",
-        number: 12345678,
+        number: "(+998 99) 123-45-67",
       },
       operator: {
         name: "Kamilova C",
@@ -84,7 +102,7 @@ export const card = {
       summa: "40000",
       user: {
         name: "Kamron Alimov",
-        number: 12345678,
+        number: "(+998 99) 123-45-67",
       },
       operator: {
         name: "Kamilova C",
@@ -104,7 +122,7 @@ export const card = {
       summa: "40000",
       user: {
         name: "Kamron Alimov",
-        number: 12345678,
+        number: "(+998 99) 123-45-67",
       },
       operator: {
         name: "Kamilova D",
@@ -122,7 +140,7 @@ export const card = {
       summa: "40000",
       user: {
         name: "Kamron Alimov",
-        number: 12345678,
+        number: "(+998 99) 123-45-67",
       },
       operator: {
         name: "Kamilova D",
