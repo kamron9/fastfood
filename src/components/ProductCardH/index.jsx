@@ -8,6 +8,7 @@ import {
   Footer,
   IconWrapper,
   Info,
+  MainWrapper,
   Wrapper,
 } from "./style";
 import { BuyurtmaContext } from "../../context/buyurtma";
@@ -48,13 +49,26 @@ export const ProductCardH = ({ value }) => {
         </Info>
       </Wrapper>
       <Wrapper flex>
-        <Info>
-          <Info.ClipBoard /> <Info.ClipPrice>34.500 UZS</Info.ClipPrice>{" "}
+        <MainWrapper top>
+          <Info.ClipBoard /> <Info.ClipPrice>34,500 UZS</Info.ClipPrice>{" "}
           <Info.PaymeIcon /> <Info.Payme>Payme</Info.Payme>
-        </Info>
+        </MainWrapper>
+        <MainWrapper>
+          <Info.Truck /> <Info.ClipPrice>5,000 UZS</Info.ClipPrice>
+        </MainWrapper>
+        <Info.TotalPrice top>Umumiy summa</Info.TotalPrice>
+        <Footer>
+          <Info.Price>40,400</Info.Price>
+          <Info.Name>&nbsp;UZS</Info.Name>
+        </Footer>
       </Wrapper>
       <Wrapper flex last>
-        4
+        <Info.Operator>Operator:</Info.Operator>
+        <Info.OperatorName>Kamilova M</Info.OperatorName>
+        <Footer column top>
+          <Info.Operator>Filallar:</Info.Operator>
+          <Info.OperatorName>Kamilova M</Info.OperatorName>
+        </Footer>
       </Wrapper>
     </Container>
   );

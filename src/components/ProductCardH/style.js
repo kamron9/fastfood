@@ -4,13 +4,14 @@ import { ReactComponent as clock } from "../../assets/icons/clock.svg";
 import { ReactComponent as user } from "../../assets/icons/user.svg";
 import { ReactComponent as call } from "../../assets/icons/call.svg";
 import { ReactComponent as clipboard } from "../../assets/icons/clipboard.svg";
+import { ReactComponent as truck } from "../../assets/icons/truck.svg";
 
 export const Container = styled.div`
   display: flex;
   border-radius: 6px;
   background: #ffffff;
   margin-bottom: 12px;
-  height: 170px;
+  height: fit-content;
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -25,7 +26,6 @@ export const Info = styled.div`
   display: flex;
   align-items: center;
   padding: 20px;
-  /* border-bottom: ${({ bottom }) => bottom && "1px solid #e5e5e5"}; */
 `;
 export const BottomLine = styled.div`
   width: 84px;
@@ -105,7 +105,10 @@ Info.CallIcon = styled(call)`
   opacity: 0.7;
 `;
 Info.ClipBoard = styled(clipboard)`
-  /* margin-top: 15px; */
+  width: 18px;
+  height: 18px;
+`;
+Info.Truck = styled(truck)`
   width: 18px;
   height: 18px;
 `;
@@ -158,8 +161,13 @@ Info.OperatorName = styled.div`
 
 export const Footer = styled.div`
   display: flex;
+  margin-top: ${({ top }) => top && `30px`};
+
+  /* align-items: center; */
+  flex-direction: ${({ column }) => column && "column"};
+`;
+export const MainWrapper = styled.div`
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 15px;
+  margin-top: ${({ top }) => (top ? `25px` : "20px")};
 `;
