@@ -104,6 +104,18 @@ Info.CallIcon = styled(call)`
   margin-right: 22px;
   opacity: 0.7;
 `;
+Info.ClipBoard = styled(clipboard)`
+  /* margin-top: 15px; */
+  width: 18px;
+  height: 18px;
+`;
+Info.ClipPrice = styled.div`
+  font-family: SFProDisplay;
+  font-size: 17px;
+  line-height: 18px;
+  color: #2d3a45;
+  margin-left: 15px;
+`;
 Info.TotalPrice = styled.div`
   font-family: SFProDisplay;
   font-size: 14px;
@@ -125,6 +137,7 @@ Info.PaymeIcon = styled.div`
   border-radius: 50%;
   background: #14e5e4;
   margin-right: 10px;
+  margin-left: auto;
 `;
 Info.Payme = styled.div`
   display: flex;

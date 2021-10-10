@@ -47,8 +47,15 @@ export const ProductCardH = ({ value }) => {
           <Info.Number>123456789</Info.Number>
         </Info>
       </Wrapper>
-      <Wrapper flex></Wrapper>
-      <Wrapper last>4</Wrapper>
+      <Wrapper flex>
+        <Info>
+          <Info.ClipBoard /> <Info.ClipPrice>34.500 UZS</Info.ClipPrice>{" "}
+          <Info.PaymeIcon /> <Info.Payme>Payme</Info.Payme>
+        </Info>
+      </Wrapper>
+      <Wrapper flex last>
+        4
+      </Wrapper>
     </Container>
   );
 };

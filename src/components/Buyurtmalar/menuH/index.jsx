@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCardH from "../../ProductCardH";
-import { Container, Wrapper } from "./style";
+import { Container } from "./style";
 import { BuyurtmaContext } from "../../../context/buyurtma";
 
 export const Body = () => {
