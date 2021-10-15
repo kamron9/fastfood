@@ -26,13 +26,21 @@ export const Catalog = () => {
     libraries,
     center,
   });
-
+  const onPlaceChanged = () => {
+    setCenter({
+      lat: place?.getPlace()?.geometry?.location?.lat(),
+      lng: place?.getPlace()?.geometry?.location?.lng(),
+    });
+  };
   return (
     <Containeter>
       <Sidebar />
       <Wrapper>
         <InputWrapper>
-          <Autocomplete>
+          <Autocomplete
+            onLoad={(e) => setPlace(e)}
+            onPlaceChanged={onPlaceChanged}
+          >
             <Input />
           </Autocomplete>
           <Button>Search</Button>
@@ -42,14 +50,14 @@ export const Catalog = () => {
           center={center}
           mapContainerStyle={{
             width: "1500px",
-            height: "750px",
+            height: "800px",
             border: "5px solid white",
             // display: "flex",
             // alignItems: "center",
             // justifyContent: "center",
           }}
         >
-          <Marker position={{ lat: 41.2995, lng: 69.2401 }} />
+          <Marker position={center} />
         </GoogleMap>
       </Wrapper>
     </Containeter>
