@@ -21,28 +21,28 @@ export const Navbar = (props) => {
         <Text>Yangi buyurtma qo'shish</Text>
       </Wrapper>
       <Wrapper>
-        <Tab active={isTabActive}>
+        <Tab active={!isTabActive}>
           <Tab.Item
             active={isActive === "Yangi"}
-            onClick={() => isTabActive && setIsActive("Yangi")}
+            onClick={() => !isTabActive && setIsActive("Yangi")}
           >
             Yangi
           </Tab.Item>
           <Tab.Item
             active={isActive === "Qabul qilingan"}
-            onClick={() => isTabActive && setIsActive("Qabul qilingan")}
+            onClick={() => !isTabActive && setIsActive("Qabul qilingan")}
           >
             Qabul qilingan
           </Tab.Item>
           <Tab.Item
             active={isActive === "Jonatilgan"}
-            onClick={() => isTabActive && setIsActive("Jonatilgan")}
+            onClick={() => !isTabActive && setIsActive("Jonatilgan")}
           >
             Jo'natilgan
           </Tab.Item>
           <Tab.Item
             active={isActive === "Yopilgan"}
-            onClick={() => isTabActive && setIsActive("Yopilgan")}
+            onClick={() => !isTabActive && setIsActive("Yopilgan")}
           >
             Yopilgan
           </Tab.Item>
@@ -51,22 +51,22 @@ export const Navbar = (props) => {
       <Wrapper cornerSize>
         <Toggle>
           <IconWrapper
-            active={isTabActive}
-            onClick={() => {
-              setIsTabActive(true);
-              props.onClick(true);
-            }}
-          >
-            <MenuV active={isTabActive} />
-          </IconWrapper>
-          <IconWrapper
             active={!isTabActive}
             onClick={() => {
               setIsTabActive(false);
               props.onClick(false);
             }}
           >
-            <MenuH active={!isTabActive} />
+            <MenuV active={!isTabActive} />
+          </IconWrapper>
+          <IconWrapper
+            active={isTabActive}
+            onClick={() => {
+              setIsTabActive(true);
+              props.onClick(true);
+            }}
+          >
+            <MenuH active={isTabActive} />
           </IconWrapper>
         </Toggle>
       </Wrapper>
