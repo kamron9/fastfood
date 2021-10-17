@@ -12,4 +12,5 @@ const Buyurtmalar = ({ location }) => {
     </Container>
   );
 };
+
 export default Buyurtmalar;
