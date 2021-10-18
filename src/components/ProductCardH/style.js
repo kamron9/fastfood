@@ -8,6 +8,13 @@ import { ReactComponent as truck } from "../../assets/icons/truck.svg";
 
 export const Container = styled.div`
   display: flex;
+  width: 100%;
+
+  position: relative;
+`;
+export const Main = styled.div`
+  display: flex;
+  width: 100%;
   border-radius: 6px;
   background: #ffffff;
   margin-bottom: 12px;
@@ -173,4 +180,14 @@ export const MainWrapper = styled.div`
   align-items: center;
   justify-content: ${({ between }) => between && "space-between"};
   margin-top: ${({ top }) => (top ? `25px` : "20px")};
+`;
+
+export const AddOrder = styled.div`
+  position: absolute;
+  display: none;
+  margin-left: auto;
+  width: 857px;
+  height: 45vh;
+  background: #ffffff;
+  box-shadow: 0px 20px 15px rgba(176, 177, 181, 0.551191);
 `;

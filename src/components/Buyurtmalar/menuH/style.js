@@ -12,5 +12,4 @@ export const Wrapper = styled.div`
   flex: 1;
   min-width: 100%;
   margin-right: 30px;
-  border: 1px solid red;
 `;
