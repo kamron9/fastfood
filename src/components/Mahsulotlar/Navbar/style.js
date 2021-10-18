@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import { ReactComponent as plus } from "../../../assets/icons/plus.svg";
+import { ReactComponent as search } from "../../../assets/icons/search.svg";
+import Filter from "../../Generic/Filter";
+
 export const Container = styled.div`
+  position: relative;
   display: flex;
   flex: 1;
   height: 180px;
+  width: 100%;
   background: #fff;
 `;
 export const Wrapper = styled.div`
@@ -12,8 +17,8 @@ export const Wrapper = styled.div`
   justify-content: center;
   height: 80px;
   background: #000;
-  width: ${({ cornerSize }) => (cornerSize ? `300px` : `100%`)};
-  border: 2px solid #e5e5e5;
+  position: relative;
+  border: ${({ right }) => right && `2px solid #e5e5e5`};
   padding: 22px 40px;
   background: #fff;
 `;
@@ -34,13 +39,35 @@ export const Text = styled.div`
   color: #2d3a45;
   margin-left: 14px;
 `;
-export const Input = styled.input`
+export const InputWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 300px;
   height: 48px;
+  background: #edeff3;
+  border-radius: 24px;
+  margin-right: 20px;
+`;
+export const Input = styled.input`
   font-size: 17px;
-  padding-left: 15px;
+  padding: 15px;
   background: #edeff3;
   border-radius: 24px;
   border: none;
   outline: none;
+`;
+export const Search = styled(search)`
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+`;
+export const FilterTab = styled.div`
+  width: 313px;
+  height: 227px;
+  left: 650px;
+  top: 73px;
+  background: #ffffff;
+  box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
+  border-radius: 6px;
 `;

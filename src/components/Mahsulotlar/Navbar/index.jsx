@@ -1,16 +1,31 @@
 import React from "react";
-import { Container, Input, Plus, Text, Wrapper } from "./style";
+import Filter from "../../Generic/Filter";
+import {
+  Container,
+  FilterTab,
+  Input,
+  InputWrapper,
+  Plus,
+  Search,
+  Text,
+  Wrapper,
+} from "./style";
 
 const Navbar = () => {
   return (
     <Container>
-      <Wrapper cornerSize>
+      <Wrapper right>
         <Plus />
         <Text>Yangi mahsulot qo'shish</Text>
       </Wrapper>
       <Wrapper>
-        <Input placeholder="Qidirish" />
+        <InputWrapper>
+          <Input placeholder="Qidirish" />
+          <Search />
+        </InputWrapper>
+        <Filter />
       </Wrapper>
+      {/* <FilterTab></FilterTab> */}
     </Container>
   );
 };

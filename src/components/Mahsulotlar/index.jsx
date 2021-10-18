@@ -1,13 +1,17 @@
 import React from "react";
+import Action from "./Action";
 import Body from "./Body";
 import Navbar from "./Navbar";
-import { Container } from "./style";
+import { BodyWrapper, Container } from "./style";
 
 const Mahsulotlar = () => {
   return (
     <Container>
       <Navbar />
-      <Body />
+      <Action />
+      <BodyWrapper>
+        <Body />
+      </BodyWrapper>
     </Container>
   );
 };
