@@ -11,7 +11,7 @@ export const Body = () => {
         <Wrapper>
           <Condition>
             <div>Yangi:</div>
-            <Numbers>4</Numbers>
+            <Numbers>{[...card.yangi].length}</Numbers>
           </Condition>
           {card.yangi.map((value) => (
             <ProductCard value={value} key={value.id} />
@@ -20,7 +20,7 @@ export const Body = () => {
         <Wrapper>
           <Condition>
             <div>Qabul qilingan</div>
-            <Numbers>4</Numbers>
+            <Numbers>{[...card.qabul].length}</Numbers>
           </Condition>
           {card.qabul.map((value) => (
             <ProductCard value={value} key={value.id} />
@@ -29,7 +29,7 @@ export const Body = () => {
         <Wrapper>
           <Condition>
             <div>Jo'natilgan</div>
-            <Numbers>4</Numbers>
+            <Numbers>{[...card.jonatilgan].length}</Numbers>
           </Condition>
           {card.jonatilgan.map((value) => (
             <ProductCard value={value} key={value.id} />
@@ -38,7 +38,7 @@ export const Body = () => {
         <Wrapper>
           <Condition>
             <div>yopilgan</div>
-            <Numbers>4</Numbers>
+            <Numbers>{[...card.yopilgan].length}</Numbers>
           </Condition>
           {card.yopilgan.map((value) => (
             <ProductCard value={value} key={value.id} />
