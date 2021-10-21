@@ -1,6 +1,15 @@
 import React from "react";
 import ProductCard from "../../ProductCardV";
-import { Condition, Container, Numbers, Wrapper } from "./style";
+import {
+  Condition,
+  Container,
+  Numbers,
+  Spot,
+  Summa,
+  SummaWrapper,
+  TotalSumma,
+  Wrapper,
+} from "./style";
 import { BuyurtmaContext } from "../../../context/buyurtma";
 
 export const Body = () => {
@@ -13,6 +22,10 @@ export const Body = () => {
             <div>Yangi:</div>
             <Numbers>{[...card.yangi].length}</Numbers>
           </Condition>
+          <SummaWrapper>
+            <Spot />
+            <Summa>12,300,000 UZS</Summa>
+          </SummaWrapper>
           {card.yangi.map((value) => (
             <ProductCard value={value} key={value.id} />
           ))}
@@ -22,6 +35,10 @@ export const Body = () => {
             <div>Qabul qilingan</div>
             <Numbers>{[...card.qabul].length}</Numbers>
           </Condition>
+          <SummaWrapper>
+            <Spot type="blue" />
+            <Summa>12,300,000 UZS</Summa>
+          </SummaWrapper>
           {card.qabul.map((value) => (
             <ProductCard value={value} key={value.id} />
           ))}
@@ -31,6 +48,10 @@ export const Body = () => {
             <div>Jo'natilgan</div>
             <Numbers>{[...card.jonatilgan].length}</Numbers>
           </Condition>
+          <SummaWrapper>
+            <Spot type="brown" />
+            <Summa>12,300,000 UZS</Summa>
+          </SummaWrapper>
           {card.jonatilgan.map((value) => (
             <ProductCard value={value} key={value.id} />
           ))}
@@ -40,6 +61,10 @@ export const Body = () => {
             <div>yopilgan</div>
             <Numbers>{[...card.yopilgan].length}</Numbers>
           </Condition>
+          <SummaWrapper>
+            <Spot type="pink" />
+            <Summa>12,300,000 UZS</Summa>
+          </SummaWrapper>
           {card.yopilgan.map((value) => (
             <ProductCard value={value} key={value.id} />
           ))}
