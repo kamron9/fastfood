@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 `;
 export const Condition = styled.div`
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-items: center;
 `;
 export const Numbers = styled.div`
