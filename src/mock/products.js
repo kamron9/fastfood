@@ -5,7 +5,7 @@ import burger from "../assets/images/productImg/burger.png";
 export const product = [
   {
     id: 1,
-    Mahsulot: "Mini lavash",
+    mahsulot: "Mini lavash",
     kategoriya: "Lavash",
     narxi: "18,000",
     qoshimcha: "fri, salat.....",
@@ -13,7 +13,7 @@ export const product = [
   },
   {
     id: 2,
-    Mahsulot: "ChizburgerMax",
+    mahsulot: "ChizburgerMax",
     kategoriya: "Burger",
     narxi: "23,000",
     qoshimcha: "fri, salat.....",
@@ -21,7 +21,7 @@ export const product = [
   },
   {
     id: 3,
-    Mahsulot: "LavashMax",
+    mahsulot: "LavashMax",
     kategoriya: "lavash",
     narxi: "25,000",
     qoshimcha: "fri, salat.....",
@@ -29,7 +29,7 @@ export const product = [
   },
   {
     id: 4,
-    Mahsulot: "Burger Mini",
+    mahsulot: "Burger Mini",
     kategoriya: "Burger",
     narxi: "18,000",
     qoshimcha: "fri, salat.....",
@@ -37,7 +37,7 @@ export const product = [
   },
   {
     id: 5,
-    Mahsulot: "Lavash",
+    mahsulot: "Lavash",
     kategoriya: "Lavash",
     narxi: "20,000",
     qoshimcha: "fri, salat.....",
@@ -45,7 +45,7 @@ export const product = [
   },
   {
     id: 6,
-    Mahsulot: "Mini lavash",
+    mahsulot: "Mini lavash",
     kategoriya: "lavash",
     narxi: "18,000",
     qoshimcha: "fri, salat.....",
@@ -53,7 +53,7 @@ export const product = [
   },
   {
     id: 7,
-    Mahsulot: "Coca-cola 1,5",
+    mahsulot: "Coca-cola 1,5",
     kategoriya: "ichimlik",
     narxi: "15,000",
     qoshimcha: "fri, salat.....",
@@ -61,7 +61,7 @@ export const product = [
   },
   {
     id: 8,
-    Mahsulot: "Coca-cola 1",
+    mahsulot: "Coca-cola 1",
     kategoriya: "ichimlik",
     narxi: "12,000",
     qoshimcha: "fri, salat.....",
@@ -69,7 +69,7 @@ export const product = [
   },
   {
     id: 9,
-    Mahsulot: "Burger Mini",
+    mahsulot: "Burger Mini",
     kategoriya: "Burger",
     narxi: "18,000",
     qoshimcha: "fri, salat.....",

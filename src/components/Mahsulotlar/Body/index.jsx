@@ -1,13 +1,20 @@
 import React from "react";
 import lavash from "../../../assets/images/productImg/lavash.png";
 import { Container, Icon, Text, Wrapper } from "./style";
+import { product } from "../../../mock/products";
 
 const Body = () => {
   return (
     <Container>
       <Wrapper>
-        <Icon src={lavash} />
-        Lavash Mini
+        {product.map((value) => {
+          return (
+            <Wrapper key={value.id}>
+              <Icon src={value.icon} />
+              <Text>{value.mahsulot}</Text>
+            </Wrapper>
+          );
+        })}
       </Wrapper>
       <Wrapper>Lavash</Wrapper>
       <Wrapper>
