@@ -11,7 +11,7 @@ const Body = () => {
           return (
             <Wrapper key={value.id}>
               <Icon src={value.icon} />
-              <Text>{value.mahsulot}</Text>
+              <Text></Text>
             </Wrapper>
           );
         })}
