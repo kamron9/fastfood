@@ -16,7 +16,8 @@ import {
 
 const libraries = ["places"];
 
-export const Catalog = () => {
+export const Xarita
+ = () => {
   const [place, setPlace] = useState(null);
   const [center, setCenter] = useState({ lat: 41.2995, lng: 69.2401 });
 
@@ -43,7 +44,6 @@ export const Catalog = () => {
           >
             <Input />
           </Autocomplete>
-          <Button>Search</Button>
         </InputWrapper>
         <GoogleMap
           zoom={13}
@@ -52,9 +52,6 @@ export const Catalog = () => {
             width: "1500px",
             height: "800px",
             border: "5px solid white",
-            // display: "flex",
-            // alignItems: "center",
-            // justifyContent: "center",
           }}
         >
           <Marker position={center} />
@@ -63,4 +60,5 @@ export const Catalog = () => {
     </Containeter>
   );
 };
-export default Catalog;
+export default Xarita
+;

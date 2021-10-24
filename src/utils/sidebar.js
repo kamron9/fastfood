@@ -11,7 +11,7 @@ import { ReactComponent as settings } from "../assets/icons/settings.svg";
 import { ReactComponent as mahsulotlar } from "../assets/icons/mahsulotlar.svg";
 import { ReactComponent as kategoriya } from "../assets/icons/kategoriya.svg";
 import { ReactComponent as mijozlar } from "../assets/icons/mijozlar.svg";
-import Katalog from "../page/Catalog";
+import Xarita from "../page/Xarita";
 
 export const sidebarData = [
   {
@@ -72,9 +72,9 @@ export const sidebarData = [
   },
   {
     id: 8,
-    path: "/katalog",
-    title: "Katalog",
-    Component: Katalog,
+    path: "/xarita",
+    title: "Xarita",
+    Component: Xarita,
     Icon: settings,
     hidden: false,
   },
