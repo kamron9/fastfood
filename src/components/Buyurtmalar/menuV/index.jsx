@@ -8,7 +8,6 @@ import {
   Spot,
   Summa,
   SummaWrapper,
-  TotalSumma,
   Wrapper,
 } from "./style";
 import { BuyurtmaContext } from "../../../context/buyurtma";
