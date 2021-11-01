@@ -1,35 +1,33 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  border: 1px solid red;
-  width: 100%;
-  height: 80px;
-  background: #ffffff;
-  transition: all 0.2s;
-  :hover {
-    box-shadow: 0px 2px 2px rgba(174, 176, 181, 0.314986);
-  }
+export const Container = styled.div``;
 
-  border-radius: 6px;
-  margin-bottom: 10px;
-`;
 export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
+  background-color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   padding: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  border-radius: 6px;
+  :hover {
+    box-shadow: 0px 20px 25px rgba(176, 177, 181, 0.432802);
+  }
 `;
+export const IconWrapper = styled.div`
+  display: flex;
+  width: 120px;
+  justify-content: space-around;
+  align-items: center;
+`;
+
 export const Icon = styled.img`
   width: 50px;
   height: 50px;
-  margin-right: 30px;
 `;
 export const Text = styled.div`
-  margin-left: 25px;
+  width: 100px;
 `;

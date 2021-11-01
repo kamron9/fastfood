@@ -1,33 +1,29 @@
 import React from "react";
-import lavash from "../../../assets/images/productImg/lavash.png";
-import { Container, Icon, Text, Wrapper } from "./style";
+import { Container, Icon, IconWrapper, Text, Wrapper } from "./style";
 import { product } from "../../../mock/products";
-import { card } from "../../../mock/card";
+import Edit from "../../Generic/Edit";
+import Delete from "../../Generic/Delete";
 
 const Body = () => {
   return (
     <Container>
-      <Wrapper>
-        {product.map((value) => {
-          return (
-            <Wrapper key={value.id}>
-              
-            </Wrapper>
-          );
-        })}
-      </Wrapper>
-      <Wrapper>
-        {/* {product.map((value) => (
-          <Text>{value.mahsulot}</Text>
-        ))} */}
-      </Wrapper>
-      <Wrapper>
-        <Text>18,000 UZS</Text>
-      </Wrapper>
-      <Wrapper>
-        <Text>Fri, salat ....</Text>
-      </Wrapper>
-      <Wrapper></Wrapper>
+      {product.map(({ id, mahsulot, kategoriya, narxi, qoshimcha, icon }) => {
+        return (
+          <Wrapper key={id}>
+            <IconWrapper>
+              <Icon src={icon} />
+              <div>{kategoriya}</div>
+            </IconWrapper>
+            <Text>{mahsulot}</Text>
+            <Text>{narxi}</Text>
+            <Text>{qoshimcha}</Text>
+            <IconWrapper left>
+              <Edit />
+              <Delete />
+            </IconWrapper>
+          </Wrapper>
+        );
+      })}
     </Container>
   );
 };
