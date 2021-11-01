@@ -10,12 +10,11 @@ export const Body = () => {
   return (
     <Container>
       <Fade top>
-        {/* <Wrapper> */}
         {card.yangi.map((value) => (
           <ProductCardH value={value} key={value.id} />
         ))}
-        {/* </Wrapper> */}
       </Fade>
+      
     </Container>
   );
 };

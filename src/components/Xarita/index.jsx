@@ -5,19 +5,11 @@ import {
   useJsApiLoader,
   Autocomplete,
 } from "@react-google-maps/api";
-import {
-  
-  Containeter,
-  Input,
-  InputWrapper,
-  Sidebar,
-  Wrapper,
-} from "./style";
+import { Containeter, Input, InputWrapper, Sidebar, Wrapper } from "./style";
 
 const libraries = ["places"];
 
-export const Xarita
- = () => {
+export const Xarita = () => {
   const [place, setPlace] = useState(null);
   const [center, setCenter] = useState({ lat: 41.2995, lng: 69.2401 });
 
@@ -50,7 +42,7 @@ export const Xarita
           center={center}
           mapContainerStyle={{
             width: "1500px",
-            height: "800px",
+            height: "780px",
             border: "5px solid white",
           }}
         >
@@ -60,5 +52,4 @@ export const Xarita
     </Containeter>
   );
 };
-export default Xarita
-;
+export default Xarita;
