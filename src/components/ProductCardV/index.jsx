@@ -8,7 +8,6 @@ import {
   IconWrapper,
   Info,
   Wrapper,
-  Yangi,
 } from "./style";
 import { BuyurtmaContext } from "../../context/buyurtma";
 

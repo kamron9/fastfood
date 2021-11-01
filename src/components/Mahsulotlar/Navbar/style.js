@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
   background: #000;
   position: relative;
   border: ${({ right }) => right && `2px solid #e5e5e5`};
+  cursor: ${({ right }) => right && `pointer`};
   padding: 22px 40px;
   background: #fff;
 `;
@@ -46,13 +47,14 @@ export const InputWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 300px;
+  width: 400px;
   height: 48px;
   background: #edeff3;
   border-radius: 24px;
   margin-right: 20px;
 `;
 export const Input = styled.input`
+  width: 100%;
   font-size: 17px;
   padding: 15px;
   background: #edeff3;
@@ -63,7 +65,7 @@ export const Input = styled.input`
 export const Search = styled(search)`
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 15px;
 `;
 export const FilterTab = styled.div`
   width: 313px;
