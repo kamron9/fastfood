@@ -11,8 +11,7 @@ const Body = () => {
         {product.map((value) => {
           return (
             <Wrapper key={value.id}>
-              {value.id}
-              {/* <Icon src={value.icon} /> */}
+              
             </Wrapper>
           );
         })}
