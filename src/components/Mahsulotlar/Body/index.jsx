@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 const Body = () => {
   const onDelete = (id) => {
     let filtered = product.filter((value) => value.id !== id);
-    let newData = { ...product, filtered };
+    let newData = { ...product, value: filtered };
     console.log(filtered, "filtered");
     console.log(newData);
   };
