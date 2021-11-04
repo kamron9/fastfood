@@ -1,6 +1,7 @@
 import Generic from "../page/Generic";
 import Buyutmalar from "../page/Buyurtmalar";
 import Mahsulotlar from "../page/Mahsulotlar";
+import Kategoriyalar from "../page/Kategoriyalar";
 
 // Icons
 import { ReactComponent as buyurtma } from "../assets/icons/buyurtmalar.svg";
@@ -35,7 +36,7 @@ export const sidebarData = [
     id: 3,
     path: "/katigoriya",
     title: "Katigoriya",
-    Component: Generic,
+    Component: Kategoriyalar,
     Icon: kategoriya,
     hidden: false,
   },

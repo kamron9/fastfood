@@ -9,7 +9,6 @@ export const Container = styled.div`
   position: sticky;
   top: 0;
   z-index: 99;
-  height: 180px;
   background: #fff;
 `;
 export const Wrapper = styled.div`
