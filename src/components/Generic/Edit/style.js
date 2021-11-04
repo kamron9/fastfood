@@ -15,6 +15,6 @@ export const Container = styled.div`
 `;
 export const Edit = styled(edit)`
   box-sizing: content-box;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 `;

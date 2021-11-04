@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   padding: 15px;
   padding-left: ${({ left }) => left && "30px"};
   /* width: 160px; */
-  font-family: SFProDisplay;
+  font-family: SFProDisplay bold;
   font-size: 11px;
   line-height: 13px;
   text-transform: uppercase;

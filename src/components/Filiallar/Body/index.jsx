@@ -3,7 +3,7 @@ import Edit from "../../Generic/Edit";
 import Delete from "../../Generic/Delete";
 import Fade from "react-reveal/Fade";
 import { data } from "../../../mock/filiallar";
-import Map from "../../Generic/Map/index";
+import Map from "../../Generic/Map";
 
 const Body = () => {
   // const onDelete = (id) => {
