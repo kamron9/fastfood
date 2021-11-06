@@ -21,7 +21,7 @@ const Body = () => {
               <Text>{MijozIsmi}</Text>
               <Text>{Tel}</Text>
               <Text center>{BuyurtmalarSoni}</Text>
-              <Text>{Status}</Text>
+              <Text center>{Status}</Text>
               <IconWrapper left>
                 <div onClick={() => onChange(id)}>{change}</div>
                 {/* <Slash />  */}

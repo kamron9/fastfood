@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 `;
 export const IconWrapper = styled.div`
   display: flex;
-  width: 120px;
+  width: 200px;
   justify-content: space-around;
   align-items: center;
 `;
