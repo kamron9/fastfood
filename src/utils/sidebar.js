@@ -15,6 +15,7 @@ import { ReactComponent as kategoriya } from "../assets/icons/kategoriya.svg";
 import { ReactComponent as mijozlar } from "../assets/icons/mijozlar.svg";
 import Xarita from "../page/Xarita";
 import Hisobot from "../page/Xisobot";
+import MijozlarPage from "../page/Mijozlar";
 
 export const sidebarData = [
   {
@@ -53,7 +54,7 @@ export const sidebarData = [
     id: 5,
     path: "/mijozlar",
     title: "Mijozlar",
-    Component: Generic,
+    Component: MijozlarPage,
     Icon: mijozlar,
     hidden: false,
   },
