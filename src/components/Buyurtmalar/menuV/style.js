@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const setColor = ({ type }) => {
-  console.log(type);
   switch ( type ) {
     case  `brown`:
       return ` #FCB600`;

@@ -23,7 +23,6 @@ export const ProductCardH = ({ value }) => {
     let filtered = card[value.category].filter((data) => data.id !== value.id);
     let newData = { ...card, [value.category]: filtered };
     setBuyurtmaData(newData);
-    console.log(newData);
   };
   return (
     <Fade top>
