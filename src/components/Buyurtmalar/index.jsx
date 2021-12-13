@@ -3,7 +3,7 @@ import Body from "./Body";
 import Navbar from "./Navbar";
 import { Container } from "./style";
 
-const Buyurtmalar = ({ location }) => {
+const Buyurtmalar = () => {
   const [active, setActive] = useState(true);
   return (
     <Container className="body">

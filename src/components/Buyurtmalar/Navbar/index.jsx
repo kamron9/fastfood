@@ -17,8 +17,8 @@ export const Navbar = (props) => {
   return (
     <Container>
       <Wrapper cornerSize>
-          <Plus />
-          <Text>Yangi buyurtma qo'shish</Text>
+        <Plus />
+        <Text>Yangi buyurtma qo'shish</Text>
       </Wrapper>
       <Wrapper>
         <Tab active={!isTabActive}>

@@ -1,4 +1,4 @@
-import Generic from "../page/Generic";
+// import Generic from "../page/Generic";
 import Buyutmalar from "../page/Buyurtmalar";
 import Mahsulotlar from "../page/Mahsulotlar";
 import Kategoriyalar from "../page/Kategoriyalar";
